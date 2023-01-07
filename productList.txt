@@ -1,6 +1,6 @@
-Product ID: 7	 Product Price: 700	 Product Name: Bed
-Product ID: 6	 Product Price: 600	 Product Name: Table
-Product ID: 5	 Product Price: 500	 Product Name: Mouse
-Product ID: 4	 Product Price: 400	 Product Name: Apple
-Product ID: 3	 Product Price: 300	 Product Name: Cube
-Product ID: 1	 Product Price: 282	 Product Name: Rice
+Product ID: 2
+Product Name: Laptop Table
+ Product Price: 450
+Product ID: 1
+Product Name: Apple Mac
+ Product Price: 100000
