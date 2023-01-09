@@ -221,7 +221,9 @@ int main()
         printf(arr);
     }
     fclose(fo);*/
-
+    
+    enum operation {ADD_PRODUCT=1, UPDATE_PRODUCT=2, DELETE_PRODUCT=3, SEARCH_BY_PRODUCT_NAME=4, FIND_BY_PRODUCT_ID=5, DISPLAY_PRODUCT=6, SAVE_PRODUCTS=7, EXIT=8};
+    
     printf("What you want to do?\n1.Add product\n2.Update product\n3.Delete product\n4.Search product by name\n5.Find product bu ID\n6.Display products\n7.Save products\n8.Exit");
     do
     {
@@ -230,28 +232,28 @@ int main()
 
         switch (choice)
         {
-        case 1:
+        case (ADD_PRODUCT):
             addProd(&head);
             break;
-        case 2:
+        case (UPDATE_PRODUCT):
             updateProd(head);
             break;
-        case 3:
+        case (DELETE_PRODUCT):
             deleteProd(&head);
             break;
-        case 4:
+        case (SEARCH_BY_PRODUCT_NAME):
             searchProd(head);
             break;
-        case 5:
+        case (FIND_BY_PRODUCT_ID):
             findProd(head);
             break;
-        case 6:
+        case (DISPLAY_PRODUCT):
             displayProd(head);
             break;
-        case 7:
+        case (SAVE_PRODUCTS):
             save(head);
             break;
-        case 8:
+        case (EXIT):
             printf("Thanks for coming by!!");
             break;
         default:
