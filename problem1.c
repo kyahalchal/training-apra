@@ -91,7 +91,7 @@ void updateProd(struct Node *head_ref)
 void deleteProd(struct Node **head_ref)
 {
     int id;
-    printf("\nEnter ID of the product you want to update: ");
+    printf("\nEnter ID of the product you want to delete: ");
     scanf("%d", &id);
     fflush(stdin);
 
@@ -183,27 +183,27 @@ void findProd(struct Node *head_ref)
 }
 
 // --------------------------- display all product --------------------------------
-void displayProd(struct Node *n)
+void displayProd(struct Node *head_ref)
 {
-    while (n != NULL)
+    while (head_ref != NULL)
     {
         /* code */
-        printf("\n%d", n->prod.id);
-        printf("\t%s", n->prod.name);
-        printf("\t%d", n->prod.price);
+        printf("\n%d", head_ref->prod.id);
+        printf("\t%s", head_ref->prod.name);
+        printf("\t%d", head_ref->prod.price);
 
-        n = n->next;
+        head_ref = head_ref->next;
     }
 }
 
 // --------------------- write linked list to file --------------------------
-void save(struct Node *n)
+void save(struct Node *head_ref)
 {
     FILE *fp = fopen("productList.txt", "w");
-    while (n != NULL)
+    while (head_ref != NULL)
     {
-        fprintf(fp, "Product ID: %d\nProduct Name: %s\n Product Price: %d\n", n->prod.id, n->prod.name, n->prod.price);
-        n = n->next;
+        fprintf(fp, "Product ID: %d\nProduct Name: %s\n Product Price: %d\n", head_ref->prod.id, head_ref->prod.name, head_ref->prod.price);
+        head_ref = head_ref->next;
     }
     fclose(fp);
 }

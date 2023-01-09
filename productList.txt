@@ -1,6 +1,9 @@
+Product ID: 3
+Product Name: power point
+ Product Price: 6000
 Product ID: 2
-Product Name: Laptop Table
- Product Price: 450
+Product Name: Microsoft Home
+ Product Price: 10000
 Product ID: 1
 Product Name: Apple Mac
  Product Price: 100000
